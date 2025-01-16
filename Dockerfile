@@ -80,7 +80,7 @@ RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/od
 # Copy entrypoint script and Odoo configuration file
 COPY ./entrypoint.sh /
 COPY ./odoo.conf /etc/odoo/
-COPY wait-for-psql.py /usr/local/bin/wait-for-psql.py
+COPY wait-for-psql.py /usr/local/bin/
 
 RUN chmod +x /entrypoint.sh \
     && chmod +x /usr/local/bin/wait-for-psql.py
