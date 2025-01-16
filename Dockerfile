@@ -67,6 +67,10 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main' > /et
 # Install rtlcss (on Debian buster)
 RUN npm install -g rtlcss
 
+# Copy and install Python requirements
+COPY requirements.txt /tmp/requirements.txt
+RUN pip3 install --no-cache-dir -r /tmp/requirements.txt
+
 # Install Odoo
 ENV ODOO_VERSION 16.0
 ARG ODOO_RELEASE=20250115
