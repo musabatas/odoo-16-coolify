@@ -17,23 +17,10 @@ RUN apt-get update && \
         dirmngr \
         fonts-noto-cjk \
         gnupg \
-        libsasl2-dev \
-        libldap2-dev \
-        build-essential \
         libssl-dev \
-        libffi-dev \
-        libmysqlclient-dev \
-        libjpeg-dev \
-        libpq-dev \
-        libjpeg8-dev \
-        liblcms2-dev \
-        libblas-dev \
-        libatlas-base-dev \
-        libssl-dev \
-        libxml2-dev \
-        libxslt1-dev \
         node-less \
         npm \
+        python3-ldap \
         python3-magic \
         python3-num2words \
         python3-odf \
@@ -49,7 +36,6 @@ RUN apt-get update && \
         python3-watchdog \
         python3-xlrd \
         python3-xlwt \
-        zlib1g-dev \
         xz-utils && \
     if [ -z "${TARGETARCH}" ]; then \
         TARGETARCH="$(dpkg --print-architecture)"; \
