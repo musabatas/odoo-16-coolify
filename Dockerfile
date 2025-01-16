@@ -20,6 +20,15 @@ RUN apt-get update && \
         libssl-dev \
         node-less \
         npm \
+        gcc \
+        python3-dev \
+        libldap2-dev \
+        libsasl2-dev \
+        libxml2-dev \
+        libxslt1-dev \
+        libjpeg-dev \
+        zlib1g-dev \
+        build-essential \
         python3-magic \
         python3-num2words \
         python3-odf \
