@@ -73,7 +73,7 @@ RUN pip3 install --no-cache-dir -r /tmp/requirements.txt
 
 # Install Odoo
 ENV ODOO_VERSION 16.0
-ARG ODOO_RELEASE=20241203
+ARG ODOO_RELEASE=20250115
 ARG ODOO_SHA=442da1ce17c084cdfd091dcecba4bef79c081838
 RUN curl -o odoo.deb -sSL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb \
     && echo "${ODOO_SHA} odoo.deb" | sha1sum -c - \
