@@ -82,3 +82,4 @@ zeep==4.0.0
 
 # Additional for modules
 pycryptodome==3.20.0
+openpyxl
